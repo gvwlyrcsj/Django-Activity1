@@ -1,0 +1,66 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{% static 'style.css' %}" rel="stylesheet"> <!-- Linking custom stylesheet -->
+    <title>{% block title %}My BlueSite{% endblock %}</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="{% url 'base' %}">My BlueSite</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="{% url 'home_app2' %}">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'services_app2' %}">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'team_app2' %}">Team</a></li>
+            </ul>
+        </div>
+    </nav>  
+    <section class="home-section text-center"><br><br>
+        <div class="container">
+            <h1 class="mb-5">Home</h1>
+        </div>
+    </section>
+
+    <!-- Gallery with padding -->
+    <div class="container gallery-container">
+        <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                <img src="{% static 'app2/images/a.jpg' %}"
+                     class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water"/>
+                <img src="{% static 'app2/images/d.jpg' %}"
+                     class="w-100 shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape"/>
+            </div>
+
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <img src="{% static 'app2/images/b.jpg' %}"
+                     class="w-100 shadow-1-strong rounded mb-4" alt="Mountains in the Clouds"/>
+                <img src="{% static 'app2/images/c.jpg' %}"
+                     class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water"/>
+            </div>
+
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <img src="{% static 'app2/images/e.jpg' %}"
+                     class="w-100 shadow-1-strong rounded mb-4" alt="Waves at Sea"/>
+                <img src="{% static 'app2/images/g.jpg' %}"
+                     class="w-100 shadow-1-strong rounded mb-4" alt="Yosemite National Park"/>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 My BlueSite. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

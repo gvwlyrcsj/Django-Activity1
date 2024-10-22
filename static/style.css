@@ -1,0 +1,126 @@
+:root {
+    --primary-color: #87a6b4;
+    --secondary-color: #2e99ac;
+    --accentuate-color: #3cb4c4;
+    --font-color: #000000;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: var(--font-color);
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: var(--secondary-color);  /* Same as footer */
+    color: #fff !important;  /* White text */
+    padding: 20px 20px;  
+}
+
+.navbar-brand {
+    color: #fff !important;
+}
+
+.nav-link {
+    color: #fff !important;
+}
+
+.footer {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 20px 0px 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.btn-primary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    padding: 15px 30px; /* Increased padding for larger button */
+    font-size: 1.25rem; /* Increased font size */
+}
+
+.btn-secondary {
+    padding: 15px 30px; /* Increased padding for larger button */
+    font-size: 1.25rem; /* Increased font size */
+}
+
+.btn-primary:hover {
+    background-color: var(--accentuate-color);
+    border-color: var(--accentuate-color);
+}
+
+.text-accent {
+    color: var(--accentuate-color);
+}
+
+.header-section {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.card {
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.gallery-container {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.service-card {
+    border: none;
+    background-color: #f8f9fa;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-icon {
+    font-size: 3rem;
+    color: #007bff;
+}
+
+.services-section {
+    padding: 50px 0;
+}
+
+.team-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.team-card {
+    border: none;
+    background-color: #f8f9fa;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+}
+
+.team-img {
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.team-role {
+    color: #007bff;
+    font-weight: 600;
+}
+
